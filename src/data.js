@@ -4,15 +4,16 @@ export const dataOne =[
         'https://cdn.pixabay.com/photo/2013/11/28/10/36/road-220058_1280.jpg',
         title: "One",
         details: "hello sun",
-        id:1
-
+        id:1,
+        link:'https://en.wikipedia.org/wiki/Pet'
     },
     {
         image: 
         'https://cdn.pixabay.com/photo/2015/06/19/20/13/sunset-815270_1280.jpg',
         title: "two",
         details: "hello sunshine",
-        id:2
+        id:2,
+        link:'https://en.wikipedia.org/wiki/Cat'
     },
     {
         image: 

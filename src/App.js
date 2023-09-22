@@ -5,6 +5,10 @@ import {dataOne} from './data.js';
 import './App.css';
 const App = () => {
 
+const handleSubmit=(id)=>{
+const newData = dataOne.filter((val)=>val.id == id)
+window.open(newData[0].link,'_blank')
+}
   return (
     <div className='d-flex flex-row p-2 m-2 justify-content-around flex-wrap'>
    {dataOne.map((val)=>{
@@ -17,7 +21,7 @@ return(
     <Card.Text>
       {val.details}
     </Card.Text>
-    <Button variant="primary" onClick={()=>{window.open('https://pixabay.com/images/search/sky/','_blank')}}>Go somewhere</Button>
+    <Button variant="primary" onClick={()=>handleSubmit(val.id)}>Go somewhere</Button>
   </Card.Body>
 </Card>
 </div>
