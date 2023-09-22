@@ -21,7 +21,8 @@ return(
     <Card.Text>
       {val.details}
     </Card.Text>
-    <Button variant="primary" onClick={()=>handleSubmit(val.id)}>Go somewhere</Button>
+    {/* <Button variant="primary" onClick={()=>handleSubmit(val.id)}>Go somewhere</Button> */}
+       <Button variant="primary"><a href={val.link} target='blank'>Go somewhere</a></Button>
   </Card.Body>
 </Card>
 </div>
